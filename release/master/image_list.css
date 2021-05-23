@@ -1,0 +1,14 @@
+:root {
+	--image-index :1;
+	
+	--background-image1: url(https://w.wallhaven.cc/full/k7/wallhaven-k73mmd.jpg);
+	--background-image2: url(https://w.wallhaven.cc/full/0p/wallhaven-0pr3gp.jpg);
+	--background-image3: url(https://w.wallhaven.cc/full/eo/wallhaven-eoq9jr.jpg);
+	--background-image4: url(https://w.wallhaven.cc/full/ey/wallhaven-eyd118.jpg);
+	--background-image5: url(https://w.wallhaven.cc/full/73/wallhaven-73e2ge.png);
+
+	--background-image6: url(https://w.wallhaven.cc/full/nr/wallhaven-nrkyl7.jpg);
+	
+	--background-image-start: var(--background-image1);
+
+}
