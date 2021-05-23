@@ -1,55 +1,9 @@
 //META{"name":"css_test","description":"css test make","author":"kikairoot","version":"test"}*//
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
-@import url('https://raw.githubusercontent.com/kikairoot/BetterDiscordThemes/dev/release/master/image_list.css');
-
-.app-2rEoOp {
-	background-color: transparent;
-	background-size: cover;
-	
-	background-image: var(--background-image-start);
-	animation: bgImageChange 3600s linear infinite forwards alternate;
-}
+@import url('https://gitcdn.link/repo/kikairoot/BetterDiscordThemes/dev/release/master/image_list.css');
 
 
-@keyframes bgImageChange {
-  0% {
-    background-image: var(--background-image1, var(--background-image1));
-  }
-  10% {
-    background-image: var(--background-image1, var(--background-image1));
-  }
-  15% {
-    background-image: var(--background-image2, var(--background-image1));
-  }
-  30% {
-    background-image: var(--background-image2, var(--background-image1));
-  }
-  35% {
-    background-image: var(--background-image3, var(--background-image1));
-  }
-  50% {
-    background-image: var(--background-image3, var(--background-image1));
-  }
-  55% {
-    background-image: var(--background-image4, var(--background-image1));
-  }
-  70% {
-    background-image: var(--background-image4, var(--background-image1));
-  }
-  75% {
-    background-image: var(--background-image5, var(--background-image1));
-  }
-  90% {
-    background-image: var(--background-image5, var(--background-image1));
-  }
-  95% {
-    background-image: var(--background-image6, var(--background-image1));
-  }
-  100% {
-    background-image: var(--background-image6, var(--background-image1));
-  }
-}
 /*
 .layers-3iHuyZ {
 	background-color: rgba(0, 0, 0, 0.77);
