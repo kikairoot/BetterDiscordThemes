@@ -1,4 +1,4 @@
-//META{"name":"css_test","description":"css test make","author":"kikairoot","version":"test"}*//
+
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
 @import url('https://gitcdn.link/repo/kikairoot/BetterDiscordThemes/main/release/master/image_list.css');
@@ -13,24 +13,18 @@
 #channels,  /* server channel list (left side)*/
 .content-yTz4x3, /* right side chat content view */
 .members-1998pB, /* server member list (right sidebar) */
-
 .messagesWrapper-1sRNjr,
-
 .nowPlayingColumn-2sl4cE,
 .container-lRFx4q,
 .container-3w7J-x, /* Settings - Right Side */
 .membersWrap-2h-GB4, /* member list (Right side) */
-
 .privateChannels-1nO12o,
 .bg-h5JY_x, /* background mask */
 .members-1998pB>div,
 .messages-3amgkR,
-
-
 .theme-dark .form-2fGMdU:before,
 .chatContent-a9vAAp .form-2fGMdU:before,
 .chatContent-a9vAAp .form-2fGMdU>div
-
 {
 	background-color: transparent !important;
 }
