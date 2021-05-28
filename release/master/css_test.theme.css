@@ -1,5 +1,4 @@
 
-
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
 @import url('https://gitcdn.link/repo/kikairoot/BetterDiscordThemes/main/release/master/image_list.css');
 
@@ -80,7 +79,8 @@
 
 .wrapper-3NnKdC, /* server list (left sidebar) */
 .guilds-wrapper /* Guilds (Left SideBar) */,
-.title-3qD0b-,
+.title-3qD0b-, /* title bar (left top) */
+.container-1r6BKw.themed-ANHk51, /* frend menu bar (left top) */
 .headerBar-UHpsPw, /* Friends Section Header */
 .sidebar-region, /* Settings - Left Side */
 .sidebarRegion-VFTUkN,
