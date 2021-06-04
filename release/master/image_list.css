@@ -1,12 +1,10 @@
 :root {
-	--image-index :1;
-	
-	--background-image1: url(https://w.wallhaven.cc/full/k7/wallhaven-k73mmd.jpg);
-	--background-image2: url(https://w.wallhaven.cc/full/0p/wallhaven-0pr3gp.jpg);
-	--background-image3: url(https://w.wallhaven.cc/full/eo/wallhaven-eoq9jr.jpg);
-	--background-image4: url(https://w.wallhaven.cc/full/ey/wallhaven-eyd118.jpg);
-	--background-image5: url(https://w.wallhaven.cc/full/73/wallhaven-73e2ge.png);
-	--background-image6: url(https://w.wallhaven.cc/full/nr/wallhaven-nrkyl7.jpg);
+	--background-image1: url(https://images6.alphacoders.com/943/thumb-1920-943614.jpg);
+	--background-image2: url(https://images6.alphacoders.com/114/thumb-1920-1142687.png);
+	--background-image3: url(https://images-ext-2.discordapp.net/external/IYl-RB-XGCBrI0frWHaqVME7J3WejHkHx58JoqNwpZM/https/w.wallhaven.cc/full/k7/wallhaven-k73mmd.jpg);
+	--background-image4: url(https://images.alphacoders.com/114/thumb-1920-1140163.jpg);
+	--background-image5: url(https://images-ext-1.discordapp.net/external/CWaJFX98_9GIew-7rNqTklOT3rAMKnha1KtqWeElI1U/https/w.wallhaven.cc/full/ey/wallhaven-eyd118.jpg);
+	--background-image6: url(https://images-ext-2.discordapp.net/external/l28lPOCVI5Lgc-dQmE5cW3lUkH6j91XzKHAYGZrgzT0/https/w.wallhaven.cc/full/j3/wallhaven-j3wrzy.jpg);
 	
 	--background-image-start: var(--background-image1);
 
@@ -27,31 +25,31 @@
   10% {
     background-image: var(--background-image1, var(--background-image1));
   }
-  15% {
+  11% {
     background-image: var(--background-image2, var(--background-image1));
   }
   30% {
     background-image: var(--background-image2, var(--background-image1));
   }
-  35% {
+  31% {
     background-image: var(--background-image3, var(--background-image1));
   }
   50% {
     background-image: var(--background-image3, var(--background-image1));
   }
-  55% {
+  51% {
     background-image: var(--background-image4, var(--background-image1));
   }
   70% {
     background-image: var(--background-image4, var(--background-image1));
   }
-  75% {
+  71% {
     background-image: var(--background-image5, var(--background-image1));
   }
   90% {
     background-image: var(--background-image5, var(--background-image1));
   }
-  95% {
+  91% {
     background-image: var(--background-image6, var(--background-image1));
   }
   100% {
