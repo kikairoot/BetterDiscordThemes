@@ -7,15 +7,6 @@
 	--background-image6: url(https://images-ext-2.discordapp.net/external/l28lPOCVI5Lgc-dQmE5cW3lUkH6j91XzKHAYGZrgzT0/https/w.wallhaven.cc/full/j3/wallhaven-j3wrzy.jpg);
 	
 	--background-image-start: var(--background-image1);
-
-}
-
-.app-2rEoOp {
-	background-color: transparent;
-	background-size: cover;
-	
-	background-image: var(--background-image-start);
-	animation: bgImageChange 3600s linear infinite forwards alternate;
 }
 
 @keyframes bgImageChange {

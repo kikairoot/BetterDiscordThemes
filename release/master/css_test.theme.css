@@ -1,285 +1,63 @@
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/BasicBackground/BasicBackground.css);
+
+/* To change stuff like the colors, transparency and background image, change the variables inside the root {}, do NOT change the @import url() */
+
+
+:root {
+	--transparencycolor:			0,0,0;						/* default:	0,0,0																								*/
+	--transparencyalpha:			0.15;						/* default: 0.15				(general darkness of the app)													*/
+	--messagetransparency:			0.5;						/* default: 0.5					(additional shadows behind messages, set to 0 to remove boxes)					*/
+	--guildchanneltransparency:		0.15;						/* default: 0.15				(additional darkness for guild/channel list)									*/
+	--chatinputtransparency:		0.0;						/* default: 0.0					(additional darkness for chat input container)									*/
+	--memberlisttransparency:		0.0;						/* default: 0.0					(additional darkness for member list)											*/
+	--accentcolor:					190,78,180;					/* default: 190,78,180			(RGB-format - blurple: 88,101,242 bd-blue: 58,113,193)							*/
+	
+	--font:							Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;		/* font used in most places														*/
+	--textshadow:					transparent;				/* default: transparent			(textshadow for text ontop of accentcolor nodes, ONLY accepts a color, no px)	*/
+	--settingsicons:				1;							/* Use Settings Icons in User/Server/Channel Settings: 1 = yes, 0 = no											*/
+	
+
+	/* general background image				*/
+
+	--backgroundposition:			center;						/* default: center				(position of background - values: [center/top/right/bottom/left])				*/
+	--backgroundsize:				cover;						/* default: cover				(sizefit of background - values: [cover/contain/auto])							*/
+	--backgroundblur:				unset;						/* default: unset				(blur in px, only works when --background is set to an image)					*/
+	
+	--popout:						var(--background);			/* default: var(--background)	(change to use another background/color for modals/popouts)						*/
+	--popoutposition:				var(--backgroundposition);	/* default: center				(position of popout - values: [center/top/right/bottom/left])					*/
+	--popoutsize:					var(--backgroundsize);		/* default: cover				(sizefit of popout - values: [cover/contain/auto])								*/
+	--popoutblur:					var(--backgroundblur);		/* default: unset				(blur in px, only works when --popout is set to an image)						*/
+	
+	--backdrop:						rgba(0,0,0,0.85);			/* default: rgba(0,0,0,0.85)	(change to use another background/color for backdrops)							*/
+	--backdropposition:				center;						/* default: center				(position of backdrop - values: [center/top/right/bottom/left])					*/
+	--backdropsize:					cover;						/* default: cover				(sizefit of backdrop - values: [cover/contain/auto])							*/
+	--backdropblur:					unset;						/* default: unset				(blur in px, only works when --backdrop is set to an image)						*/
+	
+	--textbrightest: 				255,255,255;				/* default: 255,255,255			(text color for the brightest texts)											*/
+	--textbrighter: 				222,222,222;				/* default: 222,222,222			(text color for brighter texts)													*/
+	--textbright: 					200,200,200;				/* default: 200,200,200			(text color for bright texts)													*/
+	--textdark: 					160,160,160;				/* default: 160,160,160			(text color for dark texts)														*/
+	--textdarker: 					125,125,125;				/* default: 125,125,125			(text color for darker texts)													*/
+	--textdarkest: 					90,90,90;					/* default: 90,90,90			(text color for the darkest texts)												*/
+	
+	--version1_0_5:					none;						/* DO NOT CHANGE THIS VARIABLE , USED TO HIDE UPDATE NOTICE														*/
+}
+
 @import url('https://gitcdn.link/cdn/kikairoot/BetterDiscordThemes/main/release/master/image_list.css');
 
-
-/* background color setting (transparent) */
-.container-1D34oG,
-.chat-3bRxxu, /* right side chat container */
-.sidebar-2K8pFh, /* channel list - Left Side */
-.container-2lgZY8, /* window container */
-.theme-dark .layer-3QrUeG ,
-#channels,  /* server channel list (left side)*/
-.content-yTz4x3, /* right side chat content view */
-.members-1998pB, /* server member list (right sidebar) */
-.messagesWrapper-1sRNjr,
-.nowPlayingColumn-2sl4cE,
-.container-lRFx4q,
-.container-3w7J-x, /* Settings - Right Side */
-.membersWrap-2h-GB4, /* member list (Right side) */
-.privateChannels-1nO12o,
-.bg-h5JY_x, /* background mask */
-.members-1998pB>div,
-.messages-3amgkR,
-.theme-dark .form-2fGMdU:before,
-.chatContent-a9vAAp .form-2fGMdU:before,
-.chatContent-a9vAAp .form-2fGMdU>div
-{
-	background-color: transparent !important;
-}
-
-
-.scroller-2LSbBU,
-.messages-wrapper,
-.friends-table,
-.messages-wrapper,
-#friends .friends-header,
-.titleBar-AC4pGV,
-.contentRegion-3nDuYy,
-.content-region /* Settings - Right Side */ {
-	background-color:  rgba(0,0,0,0.80) !important;
-}
-
-.container-1D34oG,
-.container-1r6BKw, /* channel menu & title (Right top) */
-
-.searchBar-6Kv8R2,
-.scroller-1JbKMe,
-.panels-j1Uci_,
-
-.container-1taM1r, /* Settings - Right Side */
-#channels, /* channel list - Right Side */
-
-.members-1998pB,
-.channel-members,
-.channels-Ie2l6A /* Direct Messages Side Bar */ {
-	background-color: rgba(0,0,0,0.70) !important;
-}
-
-
-
-
-.wrapper-3NnKdC ui /* server list (left sidebar) */
-{
-	background-color: rgba(0,0,0,0.60) !important;
-	width: 50%;
-	color: #FFF !important;
-	background-color: rgba(75, 0, 130, 0.8);
-	text-align: center;
-	border-radius: 4px;
-	border-bottom:0px solid #000;
-	border-top:0px solid #000;
-	border-left: 15px;
-	border-right: 15px;
-	padding-top: 2.5px;
-	padding-bottom: 2.5px;
-/*	margin: 29px auto 9px; */
-	margin: 0.5px;
-}
-
-.wrapper-3NnKdC, /* server list (left sidebar) */
-.guilds-wrapper /* Guilds (Left SideBar) */,
-.title-3qD0b-, /* title bar (left top) */
-.container-1r6BKw.themed-ANHk51, /* frend menu bar (left top) */
-.headerBar-UHpsPw, /* Friends Section Header */
-.sidebar-region, /* Settings - Left Side */
-.sidebarRegion-VFTUkN,
-.chatContent-a9vAAp form,
-.chat form {
-	background-color: rgba(0,0,0,0.60) !important;
-}
-
-
-.chatContent-a9vAAp form,
-.chat form { /* Chat Box */
-	margin: 0px !important;
-	padding-left: 20px;
-	padding-right: 20px;
-	/* height: 106px; */
-	padding: 6.5px 20px;
-	display: flex !important;
-	flex-shrink: 0 !important;
-	margin: 0 20px;
-	position: relative;
-}
-
-.chatContent-a9vAAp .form-2fGMdU>div{
-	width:100%;
-}
-
-.membersGroup-v9BXpm,
-.channel-members h2 {
-		width: 90%;
-		color: #FFF !important;
-		background-color: rgba(75, 0, 130, 0.8);
-		text-align: center;
-		border-radius: 4px;
-		border-bottom:0px solid #000;
-		border-top:0px solid #000;
-		border-left: 15px;
-		border-right: 15px;
-		padding-top: 2.5px;
-		padding-bottom: 2.5px;
-		margin: 29px auto 9px;
-		
-		height:auto;
-}
-
-.channel-members .member:hover{
-    background: rgb(128,128,128, 0.8) !important;
-}
-
-
-.popout-menu .popout-menu-item.leave {
-	background: rgba(220,0,0,0.75) !important;
-	color: #fff !important;
-}
-
-.popout-menu .popout-menu-item {
-	background-color: rgba(0,0,0,0.75) !important;
-	color: #b9bbbe !important;
-}
-
-.popout-menu .popout-menu-separator {
-	border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(75, 0, 130, 0.8);
-}
-
-#friends .friends-table {
-	margin-top: 0px;
-	padding-top: 8px;
-}
-
-.platform-win .scroller-1Bvpku
-.theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-thumb,
-.theme-dark .messages-wrapper .scroller-wrap ::-webkit-scrollbar-thumb {
-	background-color: rgba(75, 0, 130, 0.8);
-	border-color: transparent;
-}
-
-.platform-win .scroller-1Bvpku,
-.theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-track-piece,
-.theme-dark .messages-wrapper .scroller-wrap ::-webkit-scrollbar-track-piece {
+body::before {
 	background-color: transparent;
-	border-color: transparent;
+	background-size: cover;
+	
+	background-image: var(--background-image-start);
+	animation: bgImageChange 3600s linear infinite forwards alternate;
 }
-
-.lookFilled-1Gx00P.colorBrand-3pXr91, /* my account edit button*/
-.theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV, /* my account edit button*/
-.itemDefaultSelected-1UAWLe,
-.itemBrandSelected-3LxxzT,
-#bd-settings-sidebar .ui-tab-bar-item.selected,
-.buttonBrandFilled-3Mv0Ra,
-.themeDefault-24hCdX.valueChecked-m-4IJZ,
-.barFill-18ABna,
-#bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch.checked,
-.bd-pfbtn,
-.ui-standard-sidebar-view .bda-slist .bda-right button {
-	background-color: rgba(75, 0, 130, 0.8);
-	color: #FFF;
-}
-
-.buttonBrandFilled-3Mv0Ra:hover {
-	background: rgb(128,128,128, 0.8) !important;
-}
-
-.itemBrand-mC9YR4 {
-	color: rgba(75, 0, 130, 0.8);
-}
-
-.itemDanger-3m3dwx {
-	color: #FFF;
-	background-color: rgb(240, 71, 71);
-}
-.selected-3s45Ha,
-.checkbox .checkbox-inner input[type=checkbox]:checked+span,
-.themeClear-1EjkE4.valueChecked-m-4IJZ,
-.tab-bar .tab-bar-item.tab-bar-item-primary,
-.tab-bar .tab-bar-item.selected,
-.chat .new-messages-bar {
-	background-color: rgba(75, 0, 130, 0.8) !important;
-	border-color: rgba(75, 0, 130, 0.8);
-  color: #FFF !important;
-}
-
-.mention { color: rgba(75, 0, 130, 0.8) }
-.mention:hover { color: #FFF; background: rgb(128,128,128, 0.8) !important; }
-.sidebar-region .sidebar { padding-bottom: 0px !important; }
-
-.popout-menu .popout-menu-separator {
-		border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(75, 0, 130, 0.8);
-}
-
-.popout-menu .popout-menu-item:hover {
-	background: rgb(128,128,128, 0.8) !important;
-	color: #fff !important;
-}
-
-body {
-	font-family: "Gloria Hallelujah";
-  -webkit-font-smoothing: antialiased;
-	text-rendering: optimizeLegibility;
-	text-size-adjust: 100%;
-}
-
-.message-group .comment .markup pre code, /* Multi Line Code Block */
-.message-group .comment .markup code.inline /* Inline Code Block */ {
-	background-color: rgba(50,50,50,0.30) !important;
-}
-
-.message-group .comment .markup pre code /* Multi Line Code Block */ {
-	border-style: solid !important;
-	border-width: 1px !important;
-	border-color: #ce422b !important;
-  padding: 0 !important;
-}
-
-.item-26Dhrx[style*="background-color: rgb(114, 137, 218);"] { /* Radio Buttons */
-	background-color: rgba(75, 0, 130, 0.8) !important;
-	border-color: rgba(75, 0, 130, 0.8) !important;
-}
-
-.checkbox-1ix_J3[style*="border-color: rgb(114, 137, 218);"] { /* Check Box in The Radio Buttons */
-	border-color: rgba(75, 0, 130, 0.8) !important;
-}
-
-.checkbox-1ix_J3[style*="border-color: rgb(114, 137, 218);"] polyline { /* Tick in the Check Box */
-	stroke: rgba(75, 0, 130, 0.8) !important;
-}
-
-.emptyCard-1RJw8n,
-.itemDefault-3Jdr52:hover, /* Settings Normal Button */
-.itemBrand-mC9YR4:hover, /* Discord Nitro Button*/
-.ui-tab-bar-item:hover /* Better Discord Settings Button */{
-	color: #FFF; background: rgb(128,128,128, 0.8) !important;
-}
-
-.ui-standard-sidebar-view #bd-customcss-attach-controls button {
-	background-color: rgb(128,128,128) !important;
-	border-color: rgb(128,128,128) !important;
-}
-.scroller-305q3I , /* server role setting */
-.background-1QDuV2, /* my account setting */
-.fieldList-21DyL8, /* my account setting */
-.channelTextArea-rNsIhG, /* channelTextArea */
-.channelTextArea-rNsIhG>div, /* channelTextArea */
-.ui-standard-sidebar-view .bda-slist li,
-.content-region .CodeMirror,
-.content-region #bd-customcss-attach-controls {
-	background-color: rgba(128,128,128, 0.30) !important;
-}
-
-.ui-standard-sidebar-view .bda-slist li:nth-child(odd) {
-	background-color: rgba(128,128,128, 0.25);
-}
-
-.standardSidebarView-3F1I7i, /* setting back ground */
-.sidebarRegionScroller-3MXcoP, /* setting menu (left side)*/
-.contentRegionScroller-26nc1e /* setting  (right side)*/
-{
-    background-color: transparent;
-	border-color: transparent;
+.container-2RRFHK::before,
+.layer-86YKbF ~ .layer-86YKbF::before,
+.root-2zfUH6::before {
+	background-image: var(--background-image-start);
+	animation: bgImageChange 3600s linear infinite forwards alternate;
 }
