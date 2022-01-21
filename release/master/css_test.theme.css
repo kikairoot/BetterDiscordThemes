@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
 
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/BasicBackground/BasicBackground.css);
+@import url('https://gitcdn.link/cdn/kikairoot/BetterDiscordThemes/main/release/master/image_list.css');
 
 /* To change stuff like the colors, transparency and background image, change the variables inside the root {}, do NOT change the @import url() */
 
@@ -45,8 +46,6 @@
 	
 	--version1_0_5:					none;						/* DO NOT CHANGE THIS VARIABLE , USED TO HIDE UPDATE NOTICE														*/
 }
-
-@import url('https://gitcdn.link/cdn/kikairoot/BetterDiscordThemes/main/release/master/image_list.css');
 
 body::before {
 	background-color: transparent;
