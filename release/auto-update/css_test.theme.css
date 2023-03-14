@@ -1,5 +1,9 @@
-//META{"name":"css_test","description":"css test make","author":"kikairoot","version":"test"}*//
-
+/**
+ * @name css_test
+ * @description css test make
+ * @author kikairoot
+ * @version test
+ */
 
 @import url('https://kikairoot.github.io/BetterDiscordThemes/release/master/css_test.theme.css');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
